@@ -1,6 +1,6 @@
 body {
 	font-family: Arial;
-	background-color: gray;
+	background-color: #B6B4C2;
 }
 
 
@@ -8,9 +8,11 @@ h1 {
 	font-size: 80px;
 	font-weight: bold;
 	text-align: center;
-	te
 }
 
-#todo_list {
+
+li {
 	text-align: center;
+	margin: 10px;
+	background-color: #F2F5EB;
 }

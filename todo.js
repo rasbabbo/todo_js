@@ -1,6 +1,7 @@
 var newInput = document.getElementById('newInput');
 var form = document.getElementById('todo_form');
 var newList = document.getElementById('newList');
+var storage = 
 
 
 
@@ -30,7 +31,9 @@ form.onsubmit = function(event) {
 
 
 
-	localStorage.setItem(newLine, newTextNode);
+	var storage = function (add) {
+		localStorage.setItem(newLine, newTextNode);
+	}
 
 
 	console.log(newTextNode);
