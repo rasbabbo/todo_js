@@ -1,0 +1,16 @@
+body {
+	font-family: Arial;
+	background-color: gray;
+}
+
+
+h1 {
+	font-size: 80px;
+	font-weight: bold;
+	text-align: center;
+	te
+}
+
+#todo_list {
+	text-align: center;
+}

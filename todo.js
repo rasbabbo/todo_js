@@ -1,14 +1,14 @@
-var line = document.getElementById('list');
-var toDo = document.getElementById('todo_form');
+var newInput = document.getElementById('newInput');
+var form = document.getElementById('todo_form');
 var newList = document.getElementById('newList');
 
 
 
-toDo.onsubmit = function(event) {
+form.onsubmit = function(event) {
 	event.preventDefault();
 
 	var newLine = document.createElement('li');
-	var newTextNode = document.createTextNode(line.value);
+	var newTextNode = document.createTextNode(newInput.value);
 	newLine.appendChild(newTextNode);
 	newList.appendChild(newLine);
 	this.reset();
@@ -22,17 +22,19 @@ toDo.onsubmit = function(event) {
 
 	button.onclick = function(clear) {
 		newList.removeChild(newLine);
+		localStorage.removeItem(newLine);
 
-		console.log("pizza")
+		console.log("pizza");
 
 	}
 
 
 
-
+	localStorage.setItem(newLine, newTextNode);
 
 
 	console.log(newTextNode);
+	console.log(JSON.parse(localStorage));
 }
 
 
