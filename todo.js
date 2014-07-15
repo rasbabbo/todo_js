@@ -9,7 +9,7 @@ form.onsubmit = function(event) {
 	event.preventDefault();
 
 	var newLine = document.createElement('li');
-	var newTextNode = document.createTextNode(newInput.value);
+	var newTextNode = document.createTextNode(newInput.value + "---");
 	newLine.appendChild(newTextNode);
 	newList.appendChild(newLine);
 	this.reset();
@@ -18,7 +18,7 @@ form.onsubmit = function(event) {
 
 
 	var button = document.createElement('button')
-	button.innerHTML = "x";
+	button.innerHTML = "Got'R Done";
 	newLine.appendChild(button);
 
 	button.onclick = function(clear) {
